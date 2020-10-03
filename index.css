@@ -1,0 +1,113 @@
+body
+{
+ height:100vh;
+ width:95vw;
+ background: #4AC29A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nav
+{
+ height:10%;
+ padding:4% 0% 0% 0%;
+ font-weight: bolder;
+ font-size:50px;
+ text-align: center;
+ color:rgb(83, 27, 31);
+}
+.startname
+{
+  position: relative;
+  left:43%;
+}
+.table
+{
+  position: relative;
+  left:35%;
+  top:-20%;
+ display: flex;
+ flex-direction: column;
+ justify-content:row;
+ height:60%;
+ width:30%;
+ border:black solid;
+}
+.row
+{
+ height:12%;
+ width:100%;
+ display:flex;
+ flex-direction: row;
+}
+.cell
+{
+  height:100%;
+  width:10%;
+  border: black solid;
+  background-color:white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:150%;
+}
+.cell:hover
+{
+  background-color:grey;
+}
+.score
+{
+  display:flex;
+  flex-direction: column;
+  height:20%;
+  width:30%;
+  font-weight: bolder;
+  position: relative;
+  left:70%;
+  color: rgb(70, 65, 75);
+}
+.reset
+{
+  position: absolute;
+  left:47%;
+  top:90%;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.startname
+{
+  position: absolute;
+  top:45%;
+  left:15%;
+}
+.score
+{
+  display:flex;
+  flex-direction: column;
+  height:20%;
+  width:30%;
+  font-weight: bolder;
+  position: relative;
+  left:60%;
+  top:5%;
+  color: rgb(70, 65, 75);
+}
+.table
+{
+  position:absolute;
+  left:15%;
+  top:32%;
+  display: flex;
+  flex-direction: column;
+  justify-content:row;
+  height:60%;
+  width:70%;
+  border:black solid;
+}
+.reset
+{
+  position: absolute;
+  left:38%;
+  top:94%;
+}
+}
